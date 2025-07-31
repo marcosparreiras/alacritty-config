@@ -5,12 +5,12 @@
 ## Other tools
 
 - `Shell`: [zsh](https://www.zsh.org/)
-    - theme: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
+    - Theme: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
 - `Text Editor`: [nvim](https://neovim.io/)
-    - [current configurations](https://github.com/marcosparreiras/nvim-config)
+    - [Current configurations](https://github.com/marcosparreiras/nvim-config)
 
-- `Terminal Multiplexer`:[tmux](https://github.com/tmux/tmux/wiki)
+- `Terminal Multiplexer`: [tmux](https://github.com/tmux/tmux/wiki)
 ```sh
 # ~/.tmux.conf
 unbind r
@@ -49,7 +49,7 @@ set-option -g status-position top
 run '~/.tmux/plugins/tpm/tpm'
 ```
 
-- `psql pager` [pspg](https://github.com/okbob/pspg?tab=readme-ov-file)
+- `Psql pager` [pspg](https://github.com/okbob/pspg?tab=readme-ov-file)
 ```sh
 # ~/.pspgrc
 theme = 16
