@@ -217,13 +217,17 @@ typeset -g POWERLEVEL9K_CONFIG_FILE=${${(%):-%x}:a}
 ```sh
 # ~/.tmux.conf
 unbind r
-bind r source-file ~/.tmux.conf
+bind r source-file ~/.tmux.conf 
 
 set -g default-terminal "tmux-256color"
 set-option -ga terminal-overrides ",*:Tc"
 
 setw -g mode-keys vi
 set -g mouse on
+
+bind c new-window -c "#{pane_current_path}"
+bind % split-window -h -c "#{pane_current_path}"
+bind '"' split-window -v -c "#{pane_current_path}"
 
 bind-key h select-pane -L
 bind-key j select-pane -D
